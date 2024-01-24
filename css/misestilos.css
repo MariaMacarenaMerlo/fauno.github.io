@@ -1,0 +1,516 @@
+@font-face {
+    font-family: Asfalto;
+    src: url(../fonts/Asfalto.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
+/**----------------------------------------------GRALES--**/
+p {
+    font-family: 'Arima', system-ui;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: Arima;
+  }
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    width: 100%; /* Establece el ancho del cuerpo al 100% del viewport width */
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal si el contenido es más ancho que el viewport */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: Asfalto;
+    font-size: 2rem;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+h3{
+    font-family: Asfalto;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+/**----------------------------------------------------------HEADER--**/
+header {
+    background-image: url(../img/headerCelularCompri.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.navbar-nav
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0)   
+}
+
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+a.nav-link {
+    color: white;
+    font-family: 'Arima', system-ui;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a.nav-link:hover {
+    color: rgba(56, 185, 194, 0.637);
+}
+
+/**----------------------------------------------------------NOSOTROS--**/
+#nosotros {
+    background-color: rgb(20, 18, 18);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nosotros p{
+    padding: 0px 1rem;
+}
+
+.imgResponsive {
+    max-width: 100%;
+    height: auto;
+    }
+
+.nosotrosDesktop {
+    display: none;
+}
+
+
+.contenedorImagen {
+    overflow: hidden;
+}
+
+/**--------------------------------------------------------------NUESTRAS CERVEZAS--**/
+#cervezas{
+    background-color: #070707;
+    color: white;
+}
+#contenedorTarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjeta>h3 {
+    color: white;
+    padding-bottom: 0;
+    font-size: 1.7rem;
+}
+
+.tarjeta {
+    background-image: url(../img/fondoTarjeta.jpg);
+    color: white;
+    margin: 1rem;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+}
+
+.tarjeta {
+    transition: transform 0.2s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px); /* Adjust the value to control the displacement */
+}
+
+.ibuAlc {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+.ibuAlc >div > img {
+    width: 30px;
+    height: 60px;
+}
+
+.prop  {
+    display: flex;
+}
+
+.propiedades>p {
+    margin-bottom: 0px;
+    padding-left: 0.5rem;
+    padding-top: 0.4rem;
+    font-family: asfalto;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.propiedades>p:last-child {
+    padding-top: 0;
+}
+
+/**--------------------------------------------------------------PARTY PUMP--**/
+#partyPump p{
+    padding: 0px 1rem;
+}
+
+#partyPump {
+    background-color: #070707;
+    color: rgb(255, 255, 255);
+}
+
+#partyPump > article:last-child {
+    padding-bottom: 2rem;
+}
+
+.partyPumpContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whatsapp {
+    font-size: 1.1rem;
+    border: solid;
+    border-width: 1px;
+    padding: 5px 10px;
+    margin-bottom: 5px;;
+    border-radius: 50px;
+}
+.whatsapp>img {
+    margin-right: 3px;
+}
+/**-----------------------------------------------------------------GALERIA--**/
+.contenedorImagenes {
+    display: none;
+}
+/**-----------------------------------------------------------------CONTACTANOS--**/
+label {
+    font-family: Asfalto;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0.5rem;
+}
+
+input{ 
+    font-family: Arima;
+}
+
+select {
+    border-radius: 0px;
+    font-family: Arima;
+}
+
+textarea {
+    border-radius: 0px;
+    font-family: Arima;
+    margin-top: 1rem;
+}
+
+iframe {
+    width: 100%;
+    min-height: 300px;
+}
+
+.button {
+    background-color: #070707;
+    color: white;
+    margin-top: 0.7rem;
+    font-family: Asfalto;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+/*---------------------------------------------------ENLACES CONTACTO --**/
+
+#enlacesContacto>article {
+    height: 55px;
+    margin: 0.5rem;
+}
+
+#enlacesContacto>article:hover {
+    transform: scale(1.3);
+}
+
+.imgResponsiveh {
+    max-height: 100%;
+    width: auto;
+}
+
+#enlacesContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+}
+
+.enlaceDesktop {
+    display: none;
+}
+
+/**------------------------------------------------------FOOTER**/
+footer{
+    background-color: #070707;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+#ulFooter>li>a{
+    font-size: 0.8rem;
+}
+
+#iconos > img {
+    width: 20px;
+    height: auto;
+}
+
+#ulFooter {
+    padding: 0;
+}
+
+#iconos {
+    padding: 0.5rem;
+}
+
+#iconos > a > img{
+    width: 20px;
+    margin: 5px;
+}
+
+
+.facebookk :hover {
+    transform: translateY(-8px) ;
+}
+.instagramm :hover {
+    transform: translateY(-8px) ;
+}
+
+
+@media screen and (min-width: 993px) {
+    /*Estilos para PC */
+    h2{
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    /*-------------------------------------------header*/
+header {
+    background-image: url(../img/PortadaFauno.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 4rem;
+
+}
+
+.nosotrosCelular {
+    display: none;
+}
+    /*-------------------------------------------nosotros*/
+#nosotros {
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+}
+#nosotros>article {
+    width: 50%;
+}
+
+.tituloTexto {
+    padding: 1rem;
+}
+.nosotrosCelular {
+    display: none;
+}
+
+.nosotrosDesktop {
+    display: block;
+
+}
+    /*-------------------------------------------cervezas*/
+#cervezas {
+    padding: 2rem;;
+}
+
+#contenedorTarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjeta {
+    width: 300px;
+    height: 400px;
+}
+
+    /*-------------------------------------------party pump*/
+#partyPump {
+    display: flex;
+    padding: 4rem;
+    
+}
+#partyPump > article {
+    width: 50%;
+}
+
+    /*-------------------------------------------galeria*/
+.fotitos3 {
+    display: flex;
+}
+
+
+.carouselMobile {
+    display: none;
+}
+
+.carrusel {
+    overflow: hidden; 
+    padding: 3rem 0;
+}
+
+.contenedorImagenes {
+    display: flex;
+    width: max-content;
+    animation: desplazamiento 50s linear infinite;
+}
+
+.imagen {
+    flex: 0 0 400px;
+    height: 500px; 
+    margin-right: 10px;
+}
+
+.imgResponsives{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+.galeria {
+    display: none;
+}
+
+/*-------------------------------------------contactanos*/
+.contactanos {
+    display: flex;
+    width: 85%;
+}
+form {
+    width: 50%;
+    padding: 4rem 2rem;
+}
+.estamosAca {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+/*-------------------------------------------enlacesContacto*/
+
+#enlacesContacto {
+    
+    background-image: url(../img/fondoEnlaces.jpg);
+    background-size: cover;
+    height: 200px;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    padding-right: 2.5rem;
+
+}
+
+
+
+.enlaceDesktop {
+    display: block;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.enlaceDesktop > a > img  {
+    height: 45px
+}
+
+#enlacesContacto > .enlaceDesktop:last-child {
+    margin-right: 6rem;
+}
+
+.enlaceMovil {
+    display: none;
+}
+
+
+/*-------------------------------------------footer*/
+
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#ulFooter>li>a {
+    text-align: start;
+}
+
+}
+
+h1 {
+    display:none;
+}
